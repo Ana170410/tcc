@@ -1,88 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="port">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Teacher Ferramentas</title>
     <style type="text/css">
-        body, h2{
-            margin:0;
-            padding:0;
-            background-color: white;
-            font-family:Arial, Helvetica, sans-serif ;
-            font: size 1cm;
-            color:#f68c68;
-            margin:auto 5%;
-            margin:top 2%;
-            justify-content:center;
-        }
-		input, select, label, fieldset{
-		font-family:Arial, Helvetica, sans-serif;
-		font: size 1cm;
-		color:#0d0502;
-		border-radius: 1cm;
-		justify-content:center;
-		}
-        p{
-		margin:0;
-        padding:0;
-        font-family:Arial, Helvetica, sans-serif ;
-        font: size 1cm;
-        color:#0d0502;
-        margin:auto 5%;
-        margin:top 2%;
-        justify-content:center;
-        }
-        button{
-		padding: 10px 8px;
-		width: auto50px;
-		color:#0d0502;
-		background:#ffe4b8;
-		border: 1px solid white;
-		border-radius: 5px;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align:center;
-		}
-		button, select{
-		cursor:pointer;  
-		}		
-    </style>
-    <title>Home page</title>
+	body{
+    margin:0;
+    padding:0;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+    font: size 1em;
+    color:#f68c68;
+    margin:auto 5%;
+    margin:top 2%;
+    justify-content:center;
+	}
+	input, select, label, fieldset{
+	font-family:Arial, Helvetica, sans-serif;
+	font: size 1cm;
+	color:#0d0502;
+	border-radius: 1cm;
+    width:30xp;
+	height:10xp;
+	}
+	button{
+	padding: 10px 8px;
+	width: auto50px;
+	color:#0d0502;
+	background:#ffe4b8;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	}
+	button, select{
+	cursor:pointer;  
+	}
+	</style>
 </head>
 <body>
-<br>
-    <fieldset>
     <div>
-    <h2>Bem-vindo</h2>
-    <p> Está plataforma é para auxiliar vocês</p>
-	<p>professores na disponiblização de conteúdo,</p>
-	<p>espero que aproveitem bastante!</p>
-    </div>
-	</fieldset>
-	<br>
-	<label>- Como posso ajudar? </label><br>
-	<br>
-    <select id="- Como posso ajudar?">
+        <h1>Bem-vindo, professor!</h1>
+        <label>- Como posso ajudar?</label><br>
+        </br>
+        <select id="- Como posso ajudar?">
             <option selected value=""> Selecione </option>
                 <option> Entrar com login na plataforma</option>
                 <option> Sair da plataforma</option>
                 <option> Entre em contato em caso de dúvidas</option>
         </select>
         <br></br>
-        <label>- Política de privacidade</label><br>
+        <button class="botao" type="submit">Avançar</button><br>
         </br>
-        <select id="- Política de privacidade">
-            <option selected value=""> Selecione </option>
-                <option> Termos e condições </option>
-                <option> Sobre a plataforma </option>
-        </select>
-		<br></br>
-		<button class="botao" type="submit">Avançar</button><br>
-        </br>
-		<label>- Cadrastro </label>
-        <br></br>
-        <button class="botao" type="submit">Entrar</button>
-		<a href=""<br>
-        </br>
+        <form>
+            <fieldset> <legend><strong>Regristro Geral</strong></legend>
+                <div>
+                <p><label id="subtítulo"> Nome:</label>
+                <input type="text" name="Nome Completo" size=50 required>
+                </p>
+                <p><label id="subtítulo"> Email:</label>
+                <input type="text" name="Email" size=50 required/></p>
+                <p><label id="Senha"> Senha:</label>
+                <input type="text" name="Senha" size="10" required>
+                </p>
+                </div>
+            </fieldset><br>
+            <button class="botao" type="submit">Enviar</button>
+            <button class="botao" type="submit">Limpar</button>
+        </form>
+
+    
+    </div>
 </body>
 </html>
